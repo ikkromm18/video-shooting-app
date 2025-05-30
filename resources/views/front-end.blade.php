@@ -8,4 +8,8 @@
     <x-layanan />
 
 
+    <x-portfolio />
+
+    <x-testimoni />
+
 @endsection
