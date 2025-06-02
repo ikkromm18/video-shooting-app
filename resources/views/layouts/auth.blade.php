@@ -11,11 +11,12 @@
 <body>
 
 
-    <x-navbar />
+    <div class="flex justify-center items-center p-10 min-h-screen w-full bg-gray-100">
+        @yield('content')
+    </div>
 
-    @yield('content')
 
-    <x-footer />
+
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 

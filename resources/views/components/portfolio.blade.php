@@ -3,83 +3,57 @@
 
         <h1 class="font-bold text-4xl">Portofolio</h1>
 
-
-        <div class="grid grid-cols-2 md:grid-cols-5 place-content-center place-items-center mt-8 gap-4">
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
             </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
-            </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
-            </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
-            </div>
-
-            <div class="shadow">
-                <img class="object-cover w-52 h-52"
-                    src="https://i.pinimg.com/736x/c2/da/70/c2da7009928033863f38d6085883d1d9.jpg" alt="">
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
             </div>
         </div>
+
 
 
         {{-- Carousel --}}
@@ -119,8 +93,8 @@
                         class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="M5 1 1 5l4 4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
@@ -132,8 +106,8 @@
                         class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m1 9 4-4-4-4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
                         </svg>
                         <span class="sr-only">Next</span>
                     </span>

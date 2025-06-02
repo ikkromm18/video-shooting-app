@@ -7,9 +7,16 @@
 
     <x-layanan />
 
-
     <x-portfolio />
 
     <x-testimoni />
+
+    <x-pricing />
+
+    <x-faq />
+
+    <x-contact />
+
+
 
 @endsection
