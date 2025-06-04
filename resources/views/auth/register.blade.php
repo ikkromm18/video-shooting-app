@@ -10,15 +10,19 @@
         <div class="flex flex-col justify-center w-1/3 px-16 py-10 bg-white">
             <div class="">
                 <h1 class="text-3xl font-bold">Register</h1>
-                <form action="" class="mt-8">
-
+                <form action="{{ route('submit-register') }}" method="post" class="mt-8">
+                    @csrf
 
                     <div class="mb-5">
                         <label for="name" class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Nama
                             Lengkap</label>
                         <input type="text" id="name"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            placeholder="Masukkan Nama" required />
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light "
+                            placeholder="Masukkan Nama" name="name" value="{{ old('name') }}" />
+                        @error('name')
+                            <p class="mt-2 text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                        @enderror
+
                     </div>
 
                     <div class="mb-5">
@@ -26,24 +30,32 @@
                             Email</label>
                         <input type="email" id="email"
                             class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            placeholder="name@flowbite.com" required />
+                            placeholder="name@flowbite.com" name="email" value="{{ old('email') }}" />
+                        @error('email')
+                            <p class="mt-2 text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div class="mb-5">
                         <label for="password"
                             class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Password</label>
-                        <input type="password" id="password"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            required />
+                        <input type="password" id="password" name="password"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
+
+                        @error('password')
+                            <p class="mt-2 text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div class="mb-5">
                         <label for="password_confirmation"
                             class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Konfirmasi
                             Password</label>
-                        <input type="password" id="password_confirmation"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            required />
+                        <input type="password" id="password_confirmation" name="password_confirmation"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
+                        @error('password_confirmation')
+                            <p class="mt-2 text-xs text-red-600 dark:text-red-500">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div class="mb-5">
