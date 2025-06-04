@@ -31,4 +31,37 @@ class AuthController extends Controller
         // Redirect
         return redirect()->route('login')->with('success', 'Register Berhasil, Silahkan Login');
     }
+
+    public function submit_login(Request $request)
+    {
+        // Validasi
+        $fields = $request->validate([
+            'email' => 'required|max:255|email',
+            'password' => 'required|min:5',
+        ]);
+
+        // Login
+
+        if (Auth::attempt($fields, $request->remember)) {
+
+            $request->session()->regenerate();
+
+            return redirect()->intended();
+        } else {
+            return back()->with('error', 'Email atau Password Salah');
+        }
+    }
+    public function logout(Request $request)
+    {
+        // Logout
+        Auth::logout();
+
+        // Menghapus Seluruh Data Session Lama
+        $request->session()->invalidate();
+
+        // Mereset CRSF Token
+        $request->session()->regenerateToken();
+
+        return redirect()->route('login')->with('success', 'Log Out Berhasil');
+    }
 }

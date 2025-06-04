@@ -22,3 +22,5 @@ Route::get('/dashboard', function () {
 
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'submit_register'])->name('submit-register');
+Route::post('/login', [AuthController::class, 'submit_login'])->name('submit-login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
