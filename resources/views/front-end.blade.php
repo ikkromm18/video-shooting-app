@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Beranda')
 @section('content')
+
+    <x-toast />
+
     <x-hero />
 
     <x-tentang />
