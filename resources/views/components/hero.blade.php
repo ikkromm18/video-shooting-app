@@ -1,5 +1,5 @@
-<section class="bg-[#F4FAFF] dark:bg-gray-900">
-    <div class="max-w-screen-xl px-4 pt-8 mx-auto text-center lg:py-16">
+<section id="hero" class="bg-[#F4FAFF] dark:bg-gray-900">
+    <div class="max-w-screen-xl px-4 pt-8 mx-auto text-center lg:py-20">
         <h1
             class="hidden mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white md:block">
             Jasa <span class="text-[#2B5A9E]">Video Shooting</span> Dan</h1>

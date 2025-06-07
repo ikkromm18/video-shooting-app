@@ -1,5 +1,5 @@
-<section class="bg-gray-100 dark:bg-gray-900">
-    <div class="px-8 md:px-20 py-8 text-gray-700">
+<section id="kontak" class="bg-gray-100 dark:bg-gray-900">
+    <div class="px-8 md:px-20 py-16 text-gray-700">
 
 
 

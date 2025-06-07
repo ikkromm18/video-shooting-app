@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -30,4 +31,13 @@ Route::middleware(['role:admin'])->group(function () {
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('dashboard');
+
+    Route::resource('user', UserController::class);
+});
+
+// untuk user
+Route::middleware(['role:user'])->group(function () {
+    Route::get('/user-dashboard', function () {
+        return view('user.user-dashboard');
+    })->name('user.dashboard');
 });

@@ -1,4 +1,4 @@
-<section class="bg-[#2B5A9E] dark:bg-gray-900 py-16">
+<section id="portofolio" class="bg-[#2B5A9E] dark:bg-gray-900 py-16">
     <div class="px-8 md:px-20 py-8 text-white">
 
         <h1 class="font-bold text-4xl">Portofolio</h1>
@@ -52,6 +52,15 @@
                 <img class="h-auto max-w-full rounded-lg"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
             </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+            </div>
+
         </div>
 
 

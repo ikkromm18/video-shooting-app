@@ -1,5 +1,5 @@
-<section class="bg-white dark:bg-gray-900">
-    <div class="px-8 md:px-20 py-8 text-gray-700">
+<section id="tentang" class="bg-white dark:bg-gray-900">
+    <div class="px-8 md:px-20 py-16 text-gray-700">
 
         <h1 class="text-center font-bold text-4xl text-[#2B5A9E]">Tentang Kami</h1>
 
