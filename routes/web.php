@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LayananController;
+use App\Http\Controllers\TambahanController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +35,8 @@ Route::middleware(['role:admin'])->group(function () {
     })->name('dashboard');
 
     Route::resource('user', UserController::class);
+    Route::resource('layanan', LayananController::class)->except('show');
+    Route::resource('tambahan', TambahanController::class)->except('show');
 });
 
 // untuk user

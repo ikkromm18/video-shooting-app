@@ -6,12 +6,17 @@
         </a>
         <div class="flex gap-2 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
-            @php
-                $name = Auth::user()->name;
-                $inisial = collect(explode(' ', $name))->map(fn($word) => strtoupper(substr($word, 0, 1)))->implode('');
-            @endphp
+
 
             @auth
+
+                @php
+                    $name = Auth::user()->name;
+                    $inisial = collect(explode(' ', $name))
+                        ->map(fn($word) => strtoupper(substr($word, 0, 1)))
+                        ->implode('');
+                @endphp
+
                 @if (Auth::user()->role === 'user')
                     <div id="avatarButton" type="button" data-dropdown-toggle="userDropdown"
                         data-dropdown-placement="bottom-start"

@@ -12,26 +12,36 @@
             <div class="md:p-8 p-4">
                 <form class="bg-white rounded-sm shadow-sm p-8">
                     <div class="mb-5">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                            email</label>
-                        <input type="email" id="email"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            placeholder="name@flowbite.com" required />
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                            Lengkap
+                        </label>
+                        <input type="text" id="name" name="name"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
                     </div>
+
                     <div class="mb-5">
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                            password</label>
-                        <input type="password" id="password"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            required />
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
+                        </label>
+                        <input type="email" id="email" name="email"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
                     </div>
+
                     <div class="mb-5">
-                        <label for="repeat-password"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
-                        <input type="password" id="repeat-password"
-                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
-                            required />
+                        <label for="alamat"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat
+                        </label>
+                        <input type="text" id="alamat" name="alamat"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
                     </div>
+
+                    <div class="mb-5">
+                        <label for="kategori_pesanan"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat
+                        </label>
+                        <input type="text" id="alamat" name="alamat"
+                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" />
+                    </div>
+
                     <div class="flex items-start mb-5">
                         <div class="flex items-center h-5">
                             <input id="terms" type="checkbox" value=""
