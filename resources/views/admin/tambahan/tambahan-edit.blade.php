@@ -5,9 +5,9 @@
     <div class="">
 
         <x-admin.breadcrumb :items="[
-            ['label' => 'Home', 'url' => route('dashboard')],
-            ['label' => 'Layanan', 'url' => route('layanan.index')],
-            ['label' => 'Edit Layanan'],
+            ['label' => 'Dashboard', 'url' => route('dashboard')],
+            ['label' => 'Layanan Tambahan', 'url' => route('tambahan.index')],
+            ['label' => 'Edit Layanan Tambahan'],
         ]" />
 
         <x-admin.page-title title="Edit Layanan" />

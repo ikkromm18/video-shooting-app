@@ -4,7 +4,7 @@
 
     <div class="">
 
-        <x-admin.breadcrumb :items="[['label' => 'Home', 'url' => route('dashboard')], ['label' => 'Layanan Tambahan']]" />
+        <x-admin.breadcrumb :items="[['label' => 'Dashboard', 'url' => route('dashboard')], ['label' => 'Layanan Tambahan']]" />
 
         @include('components.alert')
 

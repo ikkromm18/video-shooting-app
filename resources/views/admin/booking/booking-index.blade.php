@@ -1,18 +1,18 @@
 @extends('layouts.admin')
-@section('title', 'Layanan')
+@section('title', 'Booking')
 @section('content')
 
     <div class="">
 
-        <x-admin.breadcrumb :items="[['label' => 'Dashboard', 'url' => route('dashboard')], ['label' => 'Layanan']]" />
+        <x-admin.breadcrumb :items="[['label' => 'Dashboard', 'url' => route('dashboard')], ['label' => 'Booking']]" />
 
         @include('components.alert')
 
-        <x-admin.page-title title="Layanan" />
+        <x-admin.page-title title="Daftar Booking" />
 
         <div class="flex flex-row w-full justify-between">
-            <x-admin.search-button name="search" placeholder="Cari layanan..." />
-            <x-admin.add-button href="{{ route('layanan.create') }}" />
+            <x-admin.search-button name="search" placeholder="Cari booking..." />
+            {{-- <x-admin.add-button href="{{ route('booking.create') }}" label="Tambah Booking" /> --}}
         </div>
 
 
@@ -26,10 +26,23 @@
                         </th>
 
                         <th scope="col" class="px-6 py-3">
-                            Nama Layanan
+                            Tanggal Acara
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Nama
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Layanan
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Tambahan
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Harga
+                        </th>
+
+                        <th scope="col" class="px-6 py-3">
+                            Status
                         </th>
 
                         <th scope="col" class="px-6 py-3">
@@ -41,26 +54,42 @@
                     $no = 1;
                 @endphp
                 <tbody>
-                    @foreach ($layanans as $layanan)
+                    @foreach ($bookings as $booking)
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
 
                             <td class="px-6 py-4">
-                                {{ $loop->iteration + ($layanans->currentPage() - 1) * $layanans->perPage() }}
+                                {{ $loop->iteration + ($bookings->currentPage() - 1) * $bookings->perPage() }}
                             </td>
                             <th scope="row"
                                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{ $layanan->nama_layanan }}
+                                {{ $booking->tgl_acara }}
                             </th>
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{ $booking->nama }}
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ $booking->layanan->nama_layanan }}
+                            </td>
 
                             <td class="px-6 py-4">
-                                {{ 'Rp ' . number_format($layanan->harga, 0, ',', '.') }}
+                                {{ $booking->tambahan->nama_tambahan }}
                             </td>
+
+                            <td class="px-6 py-4">
+                                {{ 'Rp ' . number_format($booking->total_harga, 0, ',', '.') }}
+                            </td>
+
+                            <td class="px-6 py-4">
+                                {{ $booking->status }}
+                            </td>
+
                             <td class="px-6 py-4 flex gap-2">
-                                <a href="{{ route('layanan.edit', $layanan->id) }}"
+                                <a href="{{ route('booking.edit', $booking->id) }}"
                                     class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
 
-                                <form action="{{ route('layanan.destroy', $layanan->id) }}" method="post">
+                                <form action="{{ route('booking.destroy', $booking->id) }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
@@ -74,7 +103,7 @@
                 </tbody>
             </table>
 
-            {{ $layanans->appends(['search' => request('search')])->links() }}
+            {{ $bookings->appends(['search' => request('search')])->links() }}
         </div>
 
     </div>

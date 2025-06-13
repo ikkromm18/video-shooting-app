@@ -5,7 +5,7 @@
     <div class="">
 
         <x-admin.breadcrumb :items="[
-            ['label' => 'Home', 'url' => route('dashboard')],
+            ['label' => 'Dashboard', 'url' => route('dashboard')],
             ['label' => 'Layanan', 'url' => route('layanan.index')],
             ['label' => 'Tambah Layanan'],
         ]" />

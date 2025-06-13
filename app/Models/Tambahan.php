@@ -13,4 +13,9 @@ class Tambahan extends Model
         'nama_tambahan',
         'harga',
     ];
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }

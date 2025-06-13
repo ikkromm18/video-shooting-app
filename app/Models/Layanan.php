@@ -14,4 +14,9 @@ class Layanan extends Model
         'nama_layanan',
         'harga',
     ];
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }

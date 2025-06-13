@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\TambahanController;
 use App\Http\Controllers\UserController;
@@ -37,6 +38,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::resource('user', UserController::class);
     Route::resource('layanan', LayananController::class)->except('show');
     Route::resource('tambahan', TambahanController::class)->except('show');
+    Route::resource('booking', BookingController::class);
 });
 
 // untuk user
