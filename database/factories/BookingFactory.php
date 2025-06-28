@@ -26,7 +26,7 @@ class BookingFactory extends Factory
             'tgl_acara' => $this->faker->dateTimeBetween('+1 days', '+1 month')->format('Y-m-d'),
             'alamat' => $this->faker->address(),
             'total_harga' => $this->faker->numberBetween(500000, 5000000),
-            'status' => $this->faker->randomElement(['menunggu', 'DP', 'lunas', 'batal']),
+            'status' => $this->faker->randomElement(['menunggu', 'noted', 'DP', 'lunas', 'batal']),
         ];
     }
 }

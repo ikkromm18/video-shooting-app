@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Booking')
+@section('title', $title)
 @section('content')
 
     <div class="">
@@ -8,7 +8,7 @@
 
         @include('components.alert')
 
-        <x-admin.page-title title="Daftar Booking" />
+        <x-admin.page-title title="{{ $pagetitle }}" />
 
         <div class="flex flex-row w-full justify-between">
             <x-admin.search-button name="search" placeholder="Cari booking..." />
@@ -86,7 +86,11 @@
                             </td>
 
                             <td class="px-6 py-4 flex gap-2">
-                                <a href="{{ route('booking.edit', $booking->id) }}"
+
+                                <a href="{{ $booking->url_detail }}"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detail</a>
+
+                                {{-- <a href="{{ route('booking.edit', $booking->id) }}"
                                     class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
 
                                 <form action="{{ route('booking.destroy', $booking->id) }}" method="post">
@@ -95,7 +99,7 @@
                                     <button type="submit"
                                         class="font-medium text-red-600 dark:text-red-500 hover:underline">Hapus</button>
 
-                                </form>
+                                </form> --}}
 
                             </td>
                         </tr>

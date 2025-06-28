@@ -22,7 +22,12 @@ return new class extends Migration
             $table->date('tgl_acara');
             $table->string('alamat');
             $table->integer('total_harga');
-            $table->enum('status', ['menunggu', 'DP', 'lunas', 'batal'])->default('pending');
+            $table->enum('status', ['menunggu', 'noted', 'DP', 'lunas', 'batal'])->default('pending');
+            $table->string('bukti_dp')->nullable();
+            $table->string('bukti_pelunasan')->nullable();
+            $table->integer('jumlah_dp')->nullable();
+            $table->integer('jumlah_pelunasan')->nullable();
+            $table->string('keterangan')->nullable();
             $table->timestamps();
         });
     }

@@ -43,6 +43,6 @@ class DatabaseSeeder extends Seeder
             TambahanSeeder::class
         ]);
 
-        Booking::factory()->count(15)->create();
+        // Booking::factory()->count(15)->create();
     }
 }

@@ -11,9 +11,16 @@ class Contact extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+
+    public $layanans;
+    public $tambahans;
+
+
+
+    public function __construct($layanans, $tambahans)
     {
-        //
+        $this->layanans = $layanans;
+        $this->tambahans = $tambahans;
     }
 
     /**

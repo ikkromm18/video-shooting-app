@@ -18,7 +18,10 @@
 
     <x-faq />
 
-    <x-contact />
+    @auth
+
+        <x-contact :layanans="$layanans" :tambahans="$tambahans" />
+    @endauth
 
 
 
